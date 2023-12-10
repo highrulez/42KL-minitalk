@@ -15,7 +15,7 @@
 static void	ft_bonus(int signal)
 {
 	if (signal == SIGUSR1)
-		printf("\033[0;35mMessage Sent!\n");
+		printf("\033[0;35mWooOps!\n");
 	else
 		printf("\033[0;35mMessage Sent!\n");
 }
