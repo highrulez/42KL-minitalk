@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:12 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 13:45:07 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 15:46:03 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,5 @@ int	main(int argc, char *argv[])
 	}
 	pid = ft_atoi(argv[1]);
 	ft_signal(pid, argv[2]);
+	ft_signal(pid, "\n");
 }
