@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:21 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 15:47:13 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:37:21 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 static void	ft_bonus(int signal)
 {
 	if (signal == SIGUSR1)
-		printf("\033[0;31mSENT!\033[0;32m\n");
+		printf("\033[0;35mSENT!\n");
 	else
-		printf("\033[0;32mSENT!\033[0;32m\n");
+		printf("\033[0;35mSENT!\n");
 }
 
 void	ft_signal(int pid, char *str)
@@ -55,8 +55,8 @@ int	main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("\033[91mError: wrong format.\033[0m\n");
-		printf("\033[33mTry: ./client_bonus [PID] [MESSAGE]\033[0m\n");
+		printf("\033[31mError: wrong format.\n");
+		printf("\033[34mTry: ./client_bonus [PID] [MESSAGE]\n");
 		return (1);
 	}
 	return (0);
