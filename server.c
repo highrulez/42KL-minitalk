@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:15 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 13:45:55 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 13:55:30 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	main(void)
 	pid = getpid();
 	ft_printf("\n");
 	ft_printf("Welcome To Highrulez's Dummy Server!\n\n");
-	ft_printf("Your Server PID # is: %u\n", pid);
+	ft_printf("Your Process Identifier # is: %u\n", pid);
 	signal(SIGUSR1, ft_sig_control);
 	signal(SIGUSR2, ft_sig_control);
 	while (1)
