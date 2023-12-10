@@ -6,13 +6,13 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:12 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 03:01:54 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 13:45:07 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void	ft_send_signal(int pid, char *str)
+void	ft_signal(int pid, char *str)
 {
 	int				i;
 	unsigned char	c;
@@ -43,5 +43,5 @@ int	main(int argc, char *argv[])
 		return (0);
 	}
 	pid = ft_atoi(argv[1]);
-	ft_send_signal(pid, argv[2]);
+	ft_signal(pid, argv[2]);
 }
