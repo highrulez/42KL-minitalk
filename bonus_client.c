@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:21 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 17:37:21 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:56:39 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 static void	ft_bonus(int signal)
 {
 	if (signal == SIGUSR1)
-		printf("\033[0;35mSENT!\n");
+		printf("\033[0;35mMessage Sent!\n");
 	else
-		printf("\033[0;35mSENT!\n");
+		printf("\033[0;35mMessage Sent!\n");
 }
 
 void	ft_signal(int pid, char *str)
