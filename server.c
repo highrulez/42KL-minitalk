@@ -6,13 +6,13 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:15 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 03:02:39 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 13:45:55 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void	ft_bit_write(int x)
+void	ft_bitrary(int x)
 {
 	static int	bit = 7;
 	static int	set = 0;
@@ -28,12 +28,12 @@ void	ft_bit_write(int x)
 		bit--;
 }
 
-void	ft_signal_control(int x)
+void	ft_sig_control(int x)
 {
 	if (x == SIGUSR1)
-		ft_bit_write(1);
+		ft_bitrary(1);
 	else
-		ft_bit_write(0);
+		ft_bitrary(0);
 }
 
 int	main(void)
@@ -41,10 +41,11 @@ int	main(void)
 	int	pid;
 
 	pid = getpid();
-	ft_printf("Welcome To Highrulez's Server!\n");
-	ft_printf("Pid--> %u\n", pid);
-	signal(SIGUSR1, ft_signal_control);
-	signal(SIGUSR2, ft_signal_control);
+	ft_printf("\n");
+	ft_printf("Welcome To Highrulez's Dummy Server!\n\n");
+	ft_printf("Your Server PID # is: %u\n", pid);
+	signal(SIGUSR1, ft_sig_control);
+	signal(SIGUSR2, ft_sig_control);
 	while (1)
 	{
 		pause();
