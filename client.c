@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:12 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 15:46:03 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:41:14 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ int	main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		ft_printf("Error: wrong number of arguments\n");
+		printf("\033[31mError: wrong format.\n");
+		printf("\033[34mTry: ./client [PID] [MESSAGE]\n");
 		return (0);
 	}
 	pid = ft_atoi(argv[1]);
