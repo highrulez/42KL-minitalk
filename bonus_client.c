@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:21 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 17:56:39 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/10 18:26:12 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	main(int argc, char *argv[])
 		signal(SIGUSR1, ft_bonus);
 		signal(SIGUSR2, ft_bonus);
 		ft_signal(pid, argv[2]);
-		ft_signal(pid, "\n");
+		ft_signal(pid, "\n\n");
 	}
 	else
 	{
