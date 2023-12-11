@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:21 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 18:26:12 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 16:06:29 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,13 @@ static void	ft_bonus(int signal)
 	if (signal == SIGUSR1)
 		printf("\033[0;35mWooOps!\n");
 	else
+	{
+		printf("\n");
 		printf("\033[0;35mMessage Sent!\n");
+		printf("╔═╗┬ ┬┌─┐┌─┐┌─┐┌─┐┌─┐┬\n");
+		printf("╚═╗│ ││  │  ├┤ └─┐└─┐│\n");
+		printf("╚═╝└─┘└─┘└─┘└─┘└─┘└─┘o\n");
+	}
 }
 
 void	ft_signal(int pid, char *str)
@@ -55,8 +61,15 @@ int	main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("\033[31mError: wrong format.\n");
-		printf("\033[34mTry: ./client_bonus [PID] [MESSAGE]\n");
+		printf("\n");
+		printf("\033[31m███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n");
+		printf("██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n");
+		printf("█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n");
+		printf("██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n");
+		printf("███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n");
+		printf("╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n");
+		printf("\033[31mIf you did'nt know what you doing, ASK!\n\n");
+		printf("\033[34mTry: ./bonus_client [PID] [MESSAGE]\n\n");
 		return (1);
 	}
 	return (0);
