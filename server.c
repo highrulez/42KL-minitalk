@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:15 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/11 20:19:54 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 20:30:03 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	main(void)
 	ft_printf("\033[0;35mWelcome To \e[1mHighrulez's\e[m \033[0;35mServer!\033[m\n\n");
 	ft_printf("\033[0;36mYour Process Identifier # is: \033[0;33m\e[1m%u\e[m\n\n",
 		pid);
-	ft_printf(UBLK "Message Received:\n\n" RST, pid);
+	ft_printf(UWHT "Message Received:\n\n" RST, pid);
 	signal(SIGUSR1, ft_sig_control);
 	signal(SIGUSR2, ft_sig_control);
 	while (1)
