@@ -6,23 +6,25 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:21 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/11 16:06:29 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 16:51:23 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bonus_minitalk.h"
+#include "color.h"
 
 static void	ft_bonus(int signal)
 {
 	if (signal == SIGUSR1)
-		printf("\033[0;35mWooOps!\n");
+		ft_printf("\033[0;35mWooOps!\n");
 	else
 	{
-		printf("\n");
-		printf("\033[0;35mMessage Sent!\n");
-		printf("╔═╗┬ ┬┌─┐┌─┐┌─┐┌─┐┌─┐┬\n");
-		printf("╚═╗│ ││  │  ├┤ └─┐└─┐│\n");
-		printf("╚═╝└─┘└─┘└─┘└─┘└─┘└─┘o\n");
+		ft_printf("\n");
+		ft_printf(BGRN "Message Sent!\n" RST);
+		ft_printf(YEL "╔═╗┬ ┬┌─┐┌─┐┌─┐┌─┐┌─┐┬\n" RST);
+		ft_printf(YEL "╚═╗│ ││  │  ├┤ └─┐└─┐│\n" RST);
+		ft_printf(YEL "╚═╝└─┘└─┘└─┘└─┘└─┘└─┘o\n" RST);
+		ft_printf("\n");
 	}
 }
 
@@ -61,15 +63,15 @@ int	main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("\n");
-		printf("\033[31m███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n");
-		printf("██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n");
-		printf("█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n");
-		printf("██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n");
-		printf("███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n");
-		printf("╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n");
-		printf("\033[31mIf you did'nt know what you doing, ASK!\n\n");
-		printf("\033[34mTry: ./bonus_client [PID] [MESSAGE]\n\n");
+		ft_printf("\n");
+		ft_printf(RED "███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n" RST);
+		ft_printf(RED "██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n" RST);
+		ft_printf(RED "█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n" RST);
+		ft_printf(RED "██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n" RST);
+		ft_printf(RED "███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n" RST);
+		ft_printf(RED "╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n\n" RST);
+		ft_printf(BRED "If you did'nt know what you doing, ASK!\n\n" RST);
+		ft_printf(BLU "Try: ./bonus_client [PID] [MESSAGE]\n\n" RST);
 		return (1);
 	}
 	return (0);
