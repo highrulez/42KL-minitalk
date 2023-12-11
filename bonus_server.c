@@ -6,11 +6,12 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:11:29 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/11 00:54:08 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 17:02:54 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bonus_minitalk.h"
+#include "color.h"
 
 void	ft_bitrary(int x, siginfo_t *info)
 {
@@ -47,10 +48,16 @@ int	main(void)
 
 	pid = getpid();
 	ft_printf("\n");
+	printf("                                      .         .; .:     \n");
+	printf("               .-.          .-.   ...;...      .;' ::     \n");
+	printf("  . ,';.,';.   `-' . ,';.   `-'    .'.-.      .;   ;;.-.  \n");
+	printf("  ;;  ;;  ;;  ;'   ;;  ;;  ;'    .; ;   :    ::    ;; .'  \n");
+	printf(" ';  ;;  ';_.;:._.';  ;;_.;:._..;   `:::'-'_;;_.-_.'`  `. \n");
+	printf("_;        `-'     ;    `.                                  \n\n");
 	ft_printf("\033[0;35mWelcome To \e[1mHighrulez's\e[m \033[0;35mServer!\n\n");
 	ft_printf("\033[0;36mYour Process Identifier # is: \033[0;33m\e[1m%u\e[m\n\n",
 		pid);
-	ft_printf("\033[0;37mMessage Received:\n\n", pid);
+	ft_printf(WHT "Message Received:\n\n" RST, pid);
 	sig.sa_sigaction = ft_sig_control;
 	sigemptyset(&sig.sa_mask);
 	sig.sa_flags = SA_SIGINFO;
