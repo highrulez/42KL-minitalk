@@ -5,11 +5,11 @@ using UNIX signals.</p>
 <h2>Foreword</h2>
 <p>You must create a communication program in the form of a client and a server.<br>
 <p>The server must be started first. After its launch, it has to print its PID.<br>
-<tr>
+<ul>
   <p>The client takes two parameters:</p>
     <li>The server PID.</li>
     <li>The string to send.</li>
-</tr>
+</ul>
   <br>
 <p>The client must send the string passed as a parameter to the server.
 Once the string has been received, the server must print it.
