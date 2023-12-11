@@ -6,7 +6,7 @@ using UNIX signals.</p>
 <p>You must create a communication program in the form of a client and a server.<br>
 <p>The server must be started first. After its launch, it has to print its PID.<br>
 <tr>
-  <p>The client takes two parameters:</p><br>
+  <p>The client takes two parameters:</p>
     <li>The server PID.</li>
     <li>The string to send.</li>
 </tr>
