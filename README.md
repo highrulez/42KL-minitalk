@@ -6,13 +6,12 @@ using UNIX signals.</p>
 <p>You must create a communication program in the form of a client and a server.<br>
 <p>The server must be started first. After its launch, it has to print its PID.<br>
   <p>The client takes two parameters:</p>
-  <tr>
-    <ul>
+  <ul>
+    <tr>
       <li>The server PID.</li>
       <li>The string to send.</li>
-    </ul>
-  </tr>
-  <br>
+    </tr>
+  </ul>
 <p>The client must send the string passed as a parameter to the server.
 Once the string has been received, the server must print it.
 <p>The server has to display the string pretty quickly. Quickly means that if you think
