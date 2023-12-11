@@ -6,7 +6,7 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:12 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/10 18:23:49 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:48:07 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,15 @@ int	main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("\033[31mError: wrong format.\n");
-		printf("\033[34mTry: ./client [PID] [MESSAGE]\n");
+		printf("\n");
+		printf("\033[31m███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n");
+		printf("██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n");
+		printf("█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n");
+		printf("██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n");
+		printf("███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n");
+		printf("╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n");
+		printf("\033[31mIf you did'nt know what you doing, ASK!\n\n");
+		printf("\033[34mTry: ./client [PID] [MESSAGE]\n\n");
 		return (0);
 	}
 	pid = ft_atoi(argv[1]);
