@@ -7,8 +7,10 @@ using UNIX signals.</p>
 <p>The server must be started first. After its launch, it has to print its PID.<br>
   <p>The client takes two parameters:</p>
   <tr>
-    <ul>The server PID.</ul>
-    <ul>The string to send.</ul>
+    <ul>
+      <li>The server PID.</li>
+      <li>The string to send.</li>
+    </ul>
   </tr>
   <br>
 <p>The client must send the string passed as a parameter to the server.
