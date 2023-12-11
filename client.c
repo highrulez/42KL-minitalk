@@ -6,11 +6,12 @@
 /*   By: aawgku-o <aawgku-o@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 19:27:12 by aawgku-o          #+#    #+#             */
-/*   Updated: 2023/12/11 15:48:07 by aawgku-o         ###   ########.fr       */
+/*   Updated: 2023/12/11 16:48:31 by aawgku-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
+#include "color.h"
 
 void	ft_signal(int pid, char *str)
 {
@@ -39,15 +40,15 @@ int	main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("\n");
-		printf("\033[31m███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n");
-		printf("██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n");
-		printf("█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n");
-		printf("██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n");
-		printf("███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n");
-		printf("╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n");
-		printf("\033[31mIf you did'nt know what you doing, ASK!\n\n");
-		printf("\033[34mTry: ./client [PID] [MESSAGE]\n\n");
+		ft_printf("\n");
+		ft_printf(RED "███████╗██████╗ ██████╗  ██████╗ ██████╗ ██╗\n" RST);
+		ft_printf(RED "██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║\n" RST);
+		ft_printf(RED "█████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██║\n" RST);
+		ft_printf(RED "██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗╚═╝\n" RST);
+		ft_printf(RED "███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██╗\n" RST);
+		ft_printf(RED "╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝\n\n" RST);
+		ft_printf(BRED "If you did'nt know what you doing, ASK!\n\n" RST);
+		ft_printf(BLU "Try: ./bonus_client [PID] [MESSAGE]\n\n" RST);
 		return (0);
 	}
 	pid = ft_atoi(argv[1]);
